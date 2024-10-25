@@ -1,0 +1,18 @@
+<!-- vertical viewBox <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 73">  -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 24 24 24">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="1" stdDeviation="0.5" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="rainbow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="15%" style="stop-color:#FF6666"/>
+      <stop offset="45%" style="stop-color:#FFCC66"/>
+      <stop offset="60%" style="stop-color:#FFFF66"/>
+      <stop offset="70%" style="stop-color:#66FF66"/>
+      <stop offset="100%" style="stop-color:#6666FF"/>
+    </linearGradient>
+  </defs>
+  <!-- <path fill="url(#rainbow)" stroke="#000" stroke-width="0.5" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" filter="url(#shadow)" transform="translate(0, 0) scale(0.9)"/> -->
+  <path fill="url(#rainbow)" stroke="#000" stroke-width="0.5" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" filter="url(#shadow)" transform="translate(0, 26) scale(0.9)"/>
+  <!-- <path fill="url(#rainbow)" stroke="#000" stroke-width="0.5" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" filter="url(#shadow)" transform="translate(0, 52) scale(0.9)"/> -->
+</svg>

@@ -1,0 +1,77 @@
+/* variables.css */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+:root {
+  /* Colori */
+  --color-rgb: rgb(0, 128, 129);
+  --color-bg: #dce4ef;
+  /* --color-bg: hsl(170, 31%, 85%); */
+  --color-bg-night: #4f627b;
+  --color-text: #212121;
+  --color-text-night: #ffffffdd;
+  --color-border: rgba(0, 0, 0, 0.75);
+
+  --color-a-0: #fb923c;
+  --color-a-1: #ec9c63;
+  --color-a-2: #fdba74;
+  --color-a-3: #ffc9a2e3;
+
+  --color-b-1: #0097b2;
+  --color-b-2: #779199;
+  --color-b-3: #8eb9c6;
+  --color-b-4: #bbd4dc;
+
+  /* Typography */
+  --font-family-noto: "Noto Sans SC", sans-serif;
+  --font-family-orb: "Orbitron", serif;
+  --font-family-2p: "Press Start 2P", system-ui;
+  --font-family-vt: "VT323", monospace;
+  --font-family-tc: "Share Tech Mono", monospace;
+
+  /* Font size base adattiva */
+  --font-size-base: clamp(12px, 1vw + 0.5rem, 18px);
+  --font-size-small: calc(var(--font-size-base) * 0.875);
+  --font-size-large: calc(var(--font-size-base) * 1.2);
+
+  /* Spacing adattivo */
+  --spacing-unit: clamp(0.5rem, 1vw, 1.5rem);
+  --spacing-xs: calc(var(--spacing-unit) * 0.5);
+  --spacing-s: calc(var(--spacing-unit) * 0.75);
+  --spacing-base: var(--spacing-unit);
+  --spacing-m: calc(var(--spacing-unit) * 1.5);
+  --spacing-l: calc(var(--spacing-unit) * 2);
+  --spacing-xl: calc(var(--spacing-unit) * 3);
+  --spacing-xxl: calc(var(--spacing-unit) * 4);
+
+  /* Borders & Shadows */
+  --border-width: clamp(1px, 0.1vw, 3px);
+  --border-standard: var(--border-width) solid var(--color-border);
+  --shadow-standard: 0 0 clamp(0.25rem, 0.5vw, 1rem) rgba(0, 0, 0, 0.2);
+
+  /* Border Radius adattivo */
+  --border-radius-s: 0.625rem;
+  --border-radius-m: 1.25rem;
+  --border-radius-l: 3.125rem;
+
+  /* Transitions */
+  --transition-standard: 0.3s ease;
+
+  /* Dimensioni adattive per componenti specifici */
+  --logo-width: clamp(250px, 25vw, 600px);
+  --card-image-size: clamp(15.625rem, 20vw, 21.875rem);
+  --lottie-size: clamp(200px, 15vw, 300px);
+  --lottie-dragon-width: clamp(500px, 40vw, 750px);
+  --lottie-dragon-height: calc(var(--lottie-dragon-width) * 0.5);
+  --nav-icon-size: clamp(2rem, 2vw, 2.75rem);
+}
+
+/* Media query per schermi molto grandi*/
+@media (min-width: 2000px) {
+  :root {
+    --font-size-base: clamp(16px, 1.2vw + 0.5rem, 22px);
+  }
+}

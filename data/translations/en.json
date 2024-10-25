@@ -1,0 +1,39 @@
+{
+    "nav": {
+        "form-button": "Contact Me",
+        "cv-tooltip": {
+            "src": "/data/markdown/en/Cv.md"
+        }
+    },
+    "bio": {
+        "p-intro": {
+            "src": "/data/markdown/en/Bio/intro.md"
+        },
+        "p-juj": {
+            "src": "/data/markdown/en/Bio/juj.md"
+        },
+        "p-nature": {
+            "src": "/data/markdown/en/Bio/nature.md"
+        },
+        "p-tech": {
+            "src": "/data/markdown/en/Bio/tech.md"
+        },
+        "p-dragon": {
+            "src": "/data/markdown/en/Bio/dragon.md"
+        }
+    },
+    "portfolio": {
+        "card-title": "Documentation/Code",
+        "explanation": {
+             "src": "/data/markdown/en/Card.md"
+        }
+    },
+    "footer": {
+        "terms": {
+            "src": "/data/markdown/en/footer/terms.md"
+        },
+        "privacy": {
+            "src": "/data/markdown/en/footer/privacy.md"
+        }
+    }
+}

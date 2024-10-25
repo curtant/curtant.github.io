@@ -1,0 +1,77 @@
+/* base.css */
+@import "variables.css";
+
+html {
+  font-size: var(--font-size-base);
+  width: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: var(--font-family-noto);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.navbar,
+.footer {
+  background-color: var(--color-a-0);
+  border-radius: var(--border-radius-l);
+  border: var(--border-standard);
+  box-shadow: var(--shadow-standard);
+}
+
+.navbar {
+  padding-left: var(--spacing-l);
+  padding-right: var(--spacing-l);
+  margin: var(--spacing-m);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.text-content {
+  color: var(--color-text);
+  margin: 0 var(--spacing-xxl);
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    white-space: pre-wrap;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: var(--spacing-base);
+  margin: var(--spacing-l);
+}
+
+a:not([href]),
+a[href=""] {
+  pointer-events: none;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-b-3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-a-1);
+  border-radius: var(--border-radius-s);
+}

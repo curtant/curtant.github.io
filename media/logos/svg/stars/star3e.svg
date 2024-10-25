@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 24">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="0.5" flood-opacity="0.7"/>
+    </filter>
+    <linearGradient id="halfFill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="50%" style="stop-color:#FF4500;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF4500;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  <path fill="#FFD700" stroke="#000" stroke-width="0.5" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" filter="url(#shadow)"/>
+  <path fill="#FFA500" stroke="#000" stroke-width="0.5" d="M36 2l3.09 6.26L46 9.27l-5 4.87 1.18 6.88L36 17.77l-6.18 3.25L31 14.14 26 9.27l6.91-1.01L36 2z" filter="url(#shadow)"/>
+  <path fill="#FF8C00" stroke="#000" stroke-width="0.5" d="M60 2l3.09 6.26L70 9.27l-5 4.87 1.18 6.88L60 17.77l-6.18 3.25L55 14.14 50 9.27l6.91-1.01L60 2z" filter="url(#shadow)"/>
+  <path fill="url(#halfFill)" stroke="#000" stroke-width="0.5" d="M84 2l3.09 6.26L94 9.27l-5 4.87 1.18 6.88L84 17.77l-6.18 3.25L79 14.14 74 9.27l6.91-1.01L84 2z" filter="url(#shadow)"/>
+</svg>

@@ -1,0 +1,42 @@
+{
+    "nav": {
+        "form-button": "Contattami",
+        "cv-tooltip": {
+            "src": "/data/markdown/it/Cv.md"
+        }
+    },
+    "bio": {
+        "p-intro": {
+            "src": "/data/markdown/it/Bio/intro.md"
+        },
+        "p-juj": {
+            "src": "/data/markdown/it/Bio/juj.md"
+        },
+        "p-nature": {
+            "src": "/data/markdown/it/Bio/nature.md"
+        },
+        "p-tech": {
+            "src": "/data/markdown/it/Bio/tech.md"
+        },
+        "p-dragon": {
+            "src": "/data/markdown/it/Bio/dragon.md"
+        }
+    },
+    "portfolio": {
+        "info": {
+            "src": "/data/markdown/it/Portfolio/info.md"
+        },
+        "card-title": "Documentazione/Codice",
+        "explanation": {
+             "src": "/data/markdown/it/Card.md"
+        }
+    },
+    "footer": {
+        "terms": {
+            "src": "/data/markdown/it/footer/terms.md"
+        },
+        "privacy": {
+            "src": "/data/markdown/it/footer/privacy.md"
+        }
+    }
+}

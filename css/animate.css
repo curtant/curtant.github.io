@@ -1,0 +1,220 @@
+/* Variabili per le animazioni */
+:root {
+  /* Timing */
+  --intro-duration: 1.5s;
+  --anim-duration: 1s;
+  --hover-duration: 0.3s;
+  --fallback-duration: 0.8s;
+
+  /* Scroll ranges */
+  --scroll-start: 2.5%;
+  --scroll-end: 50%;
+
+  /* Trasformazioni */
+  --translate-y: 50px;
+  --translate-x: 100px;
+  --rotate-angle: 2deg;
+  --scale-intro: 0.95;
+  --scale-hover: 1.02;
+  --translate-y-hover: -5px;
+
+  /* Curve di animazione */
+  --bezier-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-basic: ease;
+  --ease-out: ease-out;
+}
+
+/* Animazione intro */
+.intro.step {
+  opacity: 0;
+  transform: scale(var(--scale-intro));
+  animation: introStaticFade var(--intro-duration) var(--ease-out) forwards;
+}
+/* Bio content */
+.bio-content.step {
+  opacity: 0;
+  transform: translateY(var(--translate-y));
+  animation-name: fadeInUp;
+  animation-timeline: view();
+  animation-range: entry var(--scroll-start) cover var(--scroll-end);
+  animation-duration: var(--anim-duration);
+  animation-fill-mode: both;
+  animation-timing-function: var(--bezier-bounce);
+}
+
+@keyframes introStaticFade {
+  0% {
+    opacity: 0;
+    transform: scale(var(--scale-intro));
+  }
+  40% {
+    opacity: 0;
+    transform: scale(var(--scale-intro));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Contenitore per le animazioni */
+.gallery-category {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  will-change: transform;
+}
+
+/* Stili per schermi piccoli e medi */
+@media (max-width: 60rem) {
+  :root {
+    /* Scroll ranges */
+    --scroll-start: 1.25%;
+    --scroll-end: 35%;
+  }
+  .gallery-category.step {
+    opacity: 0;
+    transform: translateY(var(--translate-y));
+    animation: fadeInUp var(--anim-duration) var(--bezier-bounce) both;
+    animation-timeline: view();
+    animation-range: entry var(--scroll-start) cover var(--scroll-end);
+    transform-origin: center center;
+  }
+
+  .gallery-category .card {
+    opacity: 0;
+    view-timeline-name: --cardScroll;
+    view-timeline-axis: block;
+    animation: var(--anim-duration) var(--ease-basic) both;
+    animation-timeline: --cardScroll;
+    animation-range: entry var(--scroll-start) cover var(--scroll-end);
+    backface-visibility: hidden;
+  }
+
+  .gallery-category .card:nth-child(odd) {
+    transform: translateX(calc(-1 * var(--translate-x)))
+      rotate(calc(-1 * var(--rotate-angle)));
+    animation-name: slideFromLeft;
+  }
+
+  .gallery-category .card:nth-child(even) {
+    transform: translateX(var(--translate-x)) rotate(var(--rotate-angle));
+    animation-name: slideFromLeft;
+  }
+}
+
+/* Stili per schermi grandi */
+@media (min-width: 60.01rem) {
+  .gallery-category.step:nth-child(odd) {
+    opacity: 0;
+    transform: translateX(calc(-1 * var(--translate-x)));
+    animation: slideGalleryFromLeft var(--anim-duration) var(--bezier-bounce)
+      both;
+    animation-timeline: view();
+    animation-range: entry var(--scroll-start) cover var(--scroll-end);
+  }
+
+  .gallery-category.step:nth-child(odd) .card {
+    opacity: 0;
+    transform: translateX(var(--translate-x));
+    animation: slideFromRight var(--anim-duration) var(--bezier-bounce) both;
+    animation-timeline: view();
+    animation-range: entry var(--scroll-start) cover var(--scroll-end);
+  }
+
+  .gallery-category.step:nth-child(even) {
+    opacity: 0;
+    transform: translateX(var(--translate-x));
+    animation: slideGalleryFromRight var(--anim-duration) var(--bezier-bounce)
+      both;
+    animation-timeline: view();
+    animation-range: entry var(--scroll-start) cover var(--scroll-end);
+  }
+
+  .gallery-category.step:nth-child(even) .card {
+    opacity: 0;
+    transform: translateX(calc(-1 * var(--translate-x)));
+    animation: slideFromLeft var(--anim-duration) var(--bezier-bounce) both;
+    animation-timeline: view();
+    animation-range: entry var(--scroll-start) cover var(--scroll-end);
+  }
+}
+
+/* Keyframes ottimizzati */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--translate-y));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(-1 * var(--translate-x))) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateZ(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(var(--translate-x)) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateZ(0);
+  }
+}
+
+@keyframes slideGalleryFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(-1 * var(--translate-x))) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateZ(0);
+  }
+}
+
+@keyframes slideGalleryFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(var(--translate-x)) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateZ(0);
+  }
+}
+
+/* Effetti hover */
+.gallery-category .card {
+  transition: transform var(--hover-duration) var(--ease-basic);
+}
+
+.gallery-category .card:hover {
+  transform: scale(var(--scale-hover)) translateY(var(--translate-y-hover));
+}
+
+/* Fallback */
+@supports not (animation-timeline: view()) {
+  .gallery-category,
+  .gallery-category .card {
+    opacity: 0;
+    transition: all var(--fallback-duration) var(--bezier-bounce);
+  }
+
+  .gallery-category.visible,
+  .gallery-category .card.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

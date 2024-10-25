@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="robots"
+      content="noindex, nofollow, noarchive, nositelinkssearchbox, nosnippet"
+    />
+    <meta
+      name="googlebot"
+      content="noindex, nofollow, noarchive, nositelinkssearchbox, nosnippet"
+    />
+
+    <title>CurtAnt</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="media/logos/logo1.png" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="language-dropdown-list" id="language-dropdown-list">
+          <ul role="none">
+            <li>
+              <a href="#" id="lang-en" class="language-option" data-lang="en">
+                <div>
+                  <img
+                    src="media/logos/svg/flags/us.svg"
+                    alt="English (US)"
+                    class="nav-icon"
+                  />
+                  English (US)
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" id="lang-it" class="language-option" data-lang="it">
+                <div>
+                  <img
+                    src="media/logos/svg/flags/it.svg"
+                    alt="Italiano"
+                    class="nav-icon"
+                  />
+                  Italiano
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" id="lang-cn" class="language-option" data-lang="cn">
+                <div>
+                  <img
+                    src="media/logos/svg/flags/cn.svg"
+                    alt="中文 (繁體)"
+                    class="nav-icon"
+                  />
+                  中文 (繁體)
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <span class="nav-container">
+          <img
+            type="button"
+            title="language-dropdown-button"
+            id="language-dropdown-button"
+            src="media/logos/svg/flags/it.svg"
+            alt="Italiano"
+            class="language-dropdown-button"
+          />
+          <span class="theme-toggle">
+            <img
+              src="media/logos/nav/theme.svg"
+              alt="theme-toggle"
+              class="nav-icon"
+            />
+          </span>
+        </span>
+
+        <span class="nav-container">
+          <div class="cv-tooltip-container">
+            <img
+              id="cv"
+              src="media/logos/nav/cv.svg"
+              alt="cv"
+              class="nav-icon"
+            />
+            <div
+              id="cv-tooltip.parse"
+              class="cv-tooltip"
+              data-translate-key="nav.cv-tooltip"
+            ></div>
+          </div>
+          <a
+            href="https://www.comunicazioneiniziativeenpa.it/dona-ora/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="media/logos/nav/enpa.png"
+              alt="Donazioni ENPA"
+              class="nav-icon"
+            />
+          </a>
+          <a href="https://github.com/curtant" target="_blank" rel="noopener">
+            <img
+              src="media/logos/nav/github.svg"
+              alt="Github"
+              class="nav-icon"
+            />
+          </a>
+        </span>
+        <span class="nav-container hidden">
+          <span
+            id="form-button"
+            data-translate-key="nav.form-button"
+            class="form-button"
+            >yeee</span
+          >
+
+          <div id="contactModal" class="modal">
+            <img
+              src="media/img/cards/soon.svg"
+              alt="overlay-svg"
+              class="overlay-svg"
+            />
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <form class="contact-form">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </span>
+      </nav>
+    </header>
+
+    <main>
+      <section class="text-content container">
+        <div class="intro step">
+          <div class="logo-container">
+            <img src="media/logos/logoY.png" alt="AC_Logo" class="logo" />
+          </div>
+          <span data-translate-key="bio.p-intro">Ciaooooo</span>
+        </div>
+        <div class="bio-content step">
+          <div class="bio">
+            <span class="bio-text" data-translate-key="bio.p-juj"> </span>
+            <span id="lottie-juj" class="lottie"></span>
+          </div>
+          <div class="bio">
+            <span class="bio-text" data-translate-key="bio.p-nature"> </span>
+            <span id="lottie-nature" class="lottie"></span>
+          </div>
+          <div class="bio-content step">
+            <div class="bio">
+              <span class="bio-text" data-translate-key="bio.p-tech"> </span>
+              <span id="lottie-tech" class="lottie tech"></span>
+            </div>
+            <div class="bio">
+              <span class="bio-text" data-translate-key="bio.p-dragon"> </span>
+              <span id="lottie-dragon" class="lottie dragon"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="gallery-category step" data-gallery-category="Example">
+        <div>
+          <div
+            class="gallery-info"
+            data-translate-key="portfolio.explanation"
+          ></div>
+        </div>
+        <!-- CARTA PORTFOLIO  -->
+        <div class="card" data-card-category="portfolio">
+          <a
+            class="live-container"
+            href=""
+            target="_blank"
+            rel="noopener"
+            data-card-img="link"
+          >
+            <img
+              src="media/img/cards/live.png"
+              alt="project-img"
+              class="card-image"
+              data-card-img="src"
+            />
+            <img
+              class="overlay-svg"
+              src="media/img/cards/live.svg"
+              alt="project-img"
+            />
+          </a>
+          <a href="" target="_blank" rel="noopener" data-card-title="link">
+            <h3
+              class="card-title"
+              data-card-title="text"
+              data-translate-key="portfolio.card-title"
+            >
+              Documentazione OR Codice
+            </h3>
+          </a>
+          <div class="card-stats">
+            <div class="stat-row">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                class="stat-badge"
+                rel="noopener"
+                data-card-stats="link"
+              >
+                <img
+                  src="media/logos/svg/stats/html.svg"
+                  alt="stat-logo"
+                  data-card-stats="src"
+                  onerror="this.style.display='none'"
+                />
+                <span data-card-stats="1">HTML</span>
+              </a>
+              <img
+                src="media/logos/svg/stars/starI.svg"
+                alt="stars"
+                class="stat-stars star-i"
+                data-card-stars="I"
+              />
+            </div>
+            <div class="stat-row">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                class="stat-badge"
+                rel="noopener"
+                data-card-stats="link"
+              >
+                <img
+                  src="media/logos/svg/stats/css.svg"
+                  alt="stat-logo"
+                  data-card-stats="src"
+                  onerror="this.style.display='none'"
+                />
+                <span data-card-stats="2">CSS</span>
+              </a>
+              <img
+                src="media/logos/svg/stars/starI.svg"
+                alt="stars"
+                class="stat-stars star-i"
+                data-card-stars="I"
+              />
+            </div>
+            <div class="stat-row">
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                class="stat-badge"
+                rel="noopener"
+                data-card-stats="link"
+              >
+                <img
+                  src="media/logos/svg/stats/js.svg"
+                  alt="stat-logo"
+                  data-card-stats="src"
+                  onerror="this.style.display='none'"
+                />
+                <span data-card-stats="3">JavaScript</span>
+              </a>
+              <img
+                src="media/logos/svg/stars/starI.svg"
+                alt="stars"
+                class="stat-stars star-i"
+                data-card-stars="I"
+              />
+            </div>
+            <div class="stat-row">
+              <span class="card-edition" data-gallery-category="Example"
+                >Edition: Example</span
+              >
+              <span class="card-edition" data-gallery-category="Example"
+                >Date: 12/2012</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -->
+      <div id="gallery-container" class="step"></div>
+    </main>
+
+    <footer class="footer">
+      © 2024 Antonio Curtotti.
+      <div class="">
+        <a href="data\markdown\en\footer\terms.md">Terms and Conditions</a>
+        <a href="data\markdown\en\footer\privacy.md">Privacy Policy</a>
+      </div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
