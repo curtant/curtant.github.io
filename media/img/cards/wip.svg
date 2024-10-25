@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <pattern id="stripes" patternUnits="userSpaceOnUse" width="40" height="40" patternTransform="rotate(45)">
+      <rect width="20" height="40" fill="#f1c40f"/>
+      <rect x="20" width="20" height="40" fill="black"/>
+    </pattern>
+  </defs>
+  
+  <!-- Sfondo leggero e trasparente -->
+  <rect width="800" height="800" fill="#999999" opacity="1"/>
+  
+  <!-- Strisce di avvertimento agli angoli -->
+  <path d="M0 0 L300 0 L0 300 Z" fill="url(#stripes)"/>
+  <path d="M800 800 L500 800 L800 500 Z" fill="url(#stripes)"/>
+  
+  <!-- Cerchio centrale -->
+  <g transform="translate(400 400) scale(1.28)">
+    <path d="M0-160A160 160 0 0 1 0 160A160 160 0 0 1 0-160M0-120A120 120 0 0 0 0 120A120 120 0 0 0 0-120Z" fill="#34495e" transform="rotate(0)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="60s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0-135A135 135 0 0 1 0 135A135 135 0 0 1 0-135M0-95A95 95 0 0 0 0 95A95 95 0 0 0 0-95Z" fill="#0097B2" transform="rotate(0)">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="30s" repeatCount="indefinite"/>
+    </path>
+  </g>
+ 
+  <!-- Nastro "Under Construction" -->
+  <g transform="translate(400 400) rotate(-45)">
+    <rect x="-450" y="-30" width="900" height="60" fill="#e74c3c"/>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#ffffff">
+      UNDER CONSTRUCTION
+    </text>
+  </g>
+</svg>

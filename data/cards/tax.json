@@ -1,0 +1,92 @@
+{
+    "categoryName": "Cose-Noiose",
+    "projects": [
+        {
+            "cardCategory": "caf",
+            "imgLink": "https://tariffario-caf.streamlit.app/",
+            "imgSrc": "caf.png",
+            "titleLink": "https://github.com/curtant/analisi_caf",
+            "titleText": "Analisi Tariffario CAF",
+            "stats": [
+                {
+                    "link": "https://python.org",
+                    "logoSrc": "python.svg",
+                    "text": "Python",
+                    "stars": "2"
+                },
+                {
+                    "link": "https://streamlit.io",
+                    "logoSrc": "streamlit.svg",
+                    "text": "Streamlit",
+                    "stars": "2e"
+                },
+                {
+                    "link": "https://en.wikipedia.org/wiki/Problem_solving",
+                    "logoSrc": "",
+                    "text": "Problem Solving",
+                    "stars": "3"
+                }
+            ],
+            "edition": "Cose-Noiose",
+            "date": "09/2023"
+        },
+        {
+            "cardCategory": "730",
+            "imgLink": "",
+            "imgSrc": "wip.svg",
+            "titleLink": "",
+            "titleText": "TaxApp",
+            "stats": [
+                {
+                    "link": "https://react.dev",
+                    "logoSrc": "react.svg",
+                    "text": "React",
+                    "stars": "1e"
+                },
+                {
+                    "link": "https://tailwindcss.com/",
+                    "logoSrc": "tailwind.svg",
+                    "text": "Tailwind",
+                    "stars": "2"
+                },
+                {
+                    "link": "https://en.wikipedia.org/wiki/Digital_product_design",
+                    "logoSrc": "design.svg",
+                    "text": "Product Design",
+                    "stars": "3e"
+                }
+            ],
+            "edition": "Cose-Noiose",
+            "date": "Soon"
+        },
+        {
+            "cardCategory": "Refact",
+            "imgLink": "",
+            "imgSrc": "wip.svg",
+            "titleLink": "",
+            "titleText": "Refact",
+            "stats": [
+                {
+                    "link": "https://en.wikipedia.org/wiki/Research",
+                    "logoSrc": "research.svg",
+                    "text": "Research",
+                    "stars": "3e"
+                },
+                {
+                    "link": "https://en.wikipedia.org/wiki/Analysis",
+                    "logoSrc": "analysis.svg",
+                    "text": "Analysis",
+                    "stars": "4"
+                },
+                {
+                    "link": "https://en.wikipedia.org/wiki/Problem_solving",
+                    "logoSrc": "problem.svg",
+                    "text": "Problem Solving",
+                    "stars": "10"
+                }
+            ],
+            "edition": "Cose-Noiose",
+            "date": "Soon"
+        }
+    ]
+}

@@ -1,0 +1,204 @@
+/* utilities.css */
+@import "variables.css";
+
+/* Language Dropdown */
+.language-dropdown-button {
+  cursor: pointer;
+}
+
+.language-dropdown-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 85%;
+  z-index: 1;
+  background-color: var(--color-b-3);
+  border-radius: var(--border-radius-m);
+  border: var(--border-standard);
+  box-shadow: var(--shadow-standard);
+  text-wrap: nowrap;
+
+  &.show {
+    display: block;
+  }
+
+  div {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+}
+
+.language-option {
+  display: block;
+  color: var(--color-text);
+  padding: var(--spacing-base);
+  font-size: var(--font-size-small);
+  border-radius: var(--border-radius-l);
+
+  &:hover {
+    background-color: var(--color-a-1);
+    visibility: visible;
+  }
+}
+
+/* CV Tooltip */
+.cv-tooltip-container {
+  position: relative;
+  display: inline-block;
+
+  &:hover .cv-tooltip,
+  .cv-tooltip.show {
+    visibility: visible;
+    opacity: 1;
+    overflow: hidden;
+    transform: translateX(-33%) translateY(0);
+  }
+}
+
+.cv-tooltip {
+  display: none;
+  background-color: var(--color-b-3);
+  color: var(--color-text);
+  border-radius: var(--border-radius-s);
+  padding: var(--spacing-s) var(--spacing-m);
+  box-shadow: var(--shadow-standard);
+  border: var(--border-standard);
+  transition: opacity var(--transition-standard);
+  text-align: left;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  font-size: 0.9rem;
+  max-width: min(380px, calc(100vw - 40px));
+  width: max-content;
+  white-space: pre-wrap;
+  word-break: break-word;
+  top: 100%;
+  left: 0%;
+  &.show {
+    display: block; /* Semplificato come il Language Dropdown */
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.cv-tooltip-form-button {
+  background-color: var(--color-a-1);
+  padding: 0.3125rem;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Form Modal */
+
+.modal {
+  box-sizing: border-box;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  margin: auto;
+  background-color: var(--color-b-4);
+  box-shadow: var(--shadow-standard);
+  padding: var(--spacing-l);
+  border-radius: var(--border-radius-m);
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  transform: scale(0.7);
+  transition: transform 0.3s ease;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+}
+
+.close {
+  color: var(--color-text-night);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--color-a-1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-m);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: var(--spacing-s);
+  border: var(--border-standard);
+  border-radius: var(--border-radius-s);
+  background-color: var(--color-b-3);
+  color: var(--color-text);
+  transition: var(--transition-standard);
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-a-1);
+  box-shadow: 0 0 0 2px var(--color-a-3);
+}
+
+button[type="submit"] {
+  background-color: var(--color-a-1);
+  color: var(--color-text);
+  border: var(--border-standard);
+  padding: var(--spacing-s) var(--spacing-m);
+  border-radius: var(--border-radius-s);
+  cursor: pointer;
+  transition: var(--transition-standard);
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--color-b-3);
+}

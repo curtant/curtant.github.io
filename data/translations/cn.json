@@ -1,0 +1,39 @@
+{
+    "nav": {
+        "form-button": "联系我",
+        "cv-tooltip": {
+            "src": "/data/markdown/cn/Cv.md"
+        }
+    },
+    "bio": {
+        "p-intro": {
+            "src": "/data/markdown/cn/Bio/intro.md"
+        },
+        "p-juj": {
+            "src": "/data/markdown/cn/Bio/juj.md"
+        },
+        "p-nature": {
+            "src": "/data/markdown/cn/Bio/nature.md"
+        },
+        "p-tech": {
+            "src": "/data/markdown/cn/Bio/tech.md"
+        },
+        "p-dragon": {
+            "src": "/data/markdown/cn/Bio/dragon.md"
+        }
+    },
+    "portfolio": {
+        "card-title": "文档 / 代码",
+        "explanation": {
+             "src": "/data/markdown/cn/Card.md"
+        }
+    },
+    "footer": {
+        "terms": {
+            "src": "/data/markdown/cn/footer/terms.md"
+        },
+        "privacy": {
+            "src": "/data/markdown/cn/footer/privacy.md"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Bordo esterno -->
+  <circle cx="50" cy="50" r="49" fill="none" stroke="black" stroke-width="2"/>
+  <!-- Bordo interno -->
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#0097B2" stroke-width="4"/>
+  
+  <!-- Foglio stilizzato -->
+  <!-- <path d="M25 25 L75 25 L75 75 L25 75 Z" fill="none" stroke="black" stroke-width="2"/>
+  <path d="M25 25 L75 25 L75 75 L25 75 Z" fill="none" stroke="black" stroke-width="0.5"/>
+   -->
+  <!-- Lettere CV  -->
+  <text x="50" y="50" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#0097B2" stroke="black" stroke-width="2" text-anchor="middle" dominant-baseline="central">CV</text>
+  
+  <!-- Penna stilizzata -->
+  <line x1="28" y1="80" x2="72" y2="80" stroke="#0097B2" stroke-width="4"/>
+  <line x1="28" y1="80" x2="72" y2="80" stroke="black" stroke-width="2"/>
+  <polygon points="70,78 74,80 70,82" fill="#0097B2" stroke="black" stroke-width="1.5"/>
+</svg>

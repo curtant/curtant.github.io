@@ -1,0 +1,87 @@
+{
+    "categoryName": "Art",
+    "projects": [
+        {
+            "cardCategory": "Art",
+            "imgLink": "",
+            "imgSrc": "",
+            "titleLink": "",
+            "titleText": "DonKo",
+            "stats": [
+                {
+                    "link": "",
+                    "logoSrc": "",
+                    "text": "",
+                    "stars": "1"
+                },
+                {
+                    "link": "",
+                    "logoSrc": "",
+                    "text": "",
+                    "stars": "1e"
+                },
+                {
+                    "link": "",
+                    "logoSrc": "",
+                    "text": "",
+                    "stars": "2"
+                }
+            ],
+            "edition": "Art"
+        },
+        {
+            "imgLink": "",
+            "imgSrc": "",
+            "titleLink": "",
+            "titleText": "YuLe",
+            "stats": [
+                {
+                    "link": "",
+                    "logoSrc": "",
+                    "text": "",
+                    "stars": "3"
+                },
+                {
+                    "link": "",
+                    "logoSrc": "",
+                    "text": "",
+                    "stars": "3e"
+                },
+                {
+                    "link": "",
+                    "logoSrc": "",
+                    "text": "",
+                    "stars": "4"
+                }
+            ],
+            "edition": "Art"
+        },
+        {
+            "imgLink": "",
+            "imgSrc": "",
+            "titleLink": "",
+            "titleText": "iCNG",
+            "stats": [
+                {
+                    "link": "",
+                    "logoSrc": "",
+                    "text": "",
+                    "stars": "4e"
+                },
+                {
+                    "link": "",
+                    "logoSrc": "",
+                    "text": "",
+                    "stars": "5"
+                },
+                {
+                    "link": "",
+                    "logoSrc": "",
+                    "text": "",
+                    "stars": "10"
+                }
+            ],
+            "edition": "Art"
+        }
+    ]
+}
