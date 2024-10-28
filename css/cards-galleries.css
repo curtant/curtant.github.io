@@ -14,10 +14,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
-  img:hover {
-    transform: scale(1.1);
-  }
 }
 
 .gallery-info {
@@ -41,7 +37,6 @@
   border-radius: var(--border-radius-s);
 
   text-wrap: balance;
-  /* white-space: pre-wrap; */
   max-width: fit-content;
   max-height: fit-content;
 
@@ -70,7 +65,6 @@
 
   a {
     text-decoration: none;
-
     &:link {
       .card-title {
         color: black;
@@ -114,8 +108,8 @@
 
 .card-stats {
   width: 100%;
-
   a {
+    text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
@@ -182,6 +176,10 @@
   transition: transform var(--transition-standard);
   border: var(--border-standard);
   box-shadow: var(--shadow-standard);
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 /* Gallery Container Variant */
