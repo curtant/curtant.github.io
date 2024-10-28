@@ -7,8 +7,8 @@ Ogni carta che vedi qui rappresenta non solo un progetto, ma un capitolo del mio
 Ecco cosa puoi scoprire:
 <details  class="stat-info">
 <summary>L'Idea</summary>
-L'immagine e il titolo ti daranno un'idea veloce di cosa tratta il progetto.
-Sono le prime scintille che accendendo la mia curiosità hanno iniziato il viaggio.
+L'immagine ti darà un'idea veloce di cosa tratta il progetto.
+La prima scintilla che accendendo la mia curiosità ne iniziato il viaggio.
 Cliccando su di essa, verrete reindirizzati al progetto o a una sua demo se disponibile.
 </details>
 
