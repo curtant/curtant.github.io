@@ -6,9 +6,9 @@ Each card you see here represents not only a project but also a chapter of my jo
 Here's what you can discover:
 <details class="stat-info">
 <summary>The Idea</summary>
-The image and title will give you a quick idea of what the project is about.
-These are the first sparks that ignited my curiosity and started the journey.
-Clicking on them will take you to the project or a demo, if available. </details> 
+The image will give you a quick idea of what the project is about.
+It's first sparks that ignited my curiosity and started the journey.
+Clicking on it will drive you to the project or a demo, if available. </details> 
 
 <details class="stat-info">
 <summary>The Heart of the Project</summary>
