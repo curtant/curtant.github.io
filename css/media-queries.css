@@ -9,14 +9,18 @@
 } */
 
 @media (min-width: 116.25rem) {
-  
+  .language-dropdown-list {
+    /* right: 90%; */
+  }
 }
 
 @media (max-width: 60rem) {
+  .language-dropdown-list {
+    /* right: 80%; */
+  }
   .logo {
     margin-top: var(--spacing-xxl);
   }
-  
   .text-content {
     flex-direction: column;
     align-items: center;
@@ -58,20 +62,21 @@
   html {
     font-size: 14px;
   }
-  
   .navbar {
     margin: var(--spacing-s);
     padding-left: var(--spacing-s);
     padding-right: var(--spacing-s);
     /* justify-content: space; */
   }
-  
   .nav-icon,
   .language-svg,
   .language-dropdown-button {
     margin-right: var(--spacing-s);
   }
-  
+  .language-dropdown-list {
+    /* right: 75%; */
+  }
+
   .gallery-category {
     margin: var(--spacing-base);
   }
@@ -88,19 +93,16 @@
     width: 120px;
     height: 120px;
   }
-  
   .lottie.dragon {
     width: 250px;
     height: 175px;
   }
-  
   .modal {
     /* width: 85%; */
     /* max-width: none;  */
     padding: var(--spacing-m);
     border-radius: var(--border-radius-s);
   }
-  
   .modal-content {
     max-width: 300px;
     margin: 0;
@@ -113,7 +115,9 @@
     padding-left: 0;
     padding-right: 0;
   }
-  
+  .language-dropdown-list {
+    /* right: 68%; */
+  }
   .modal-content {
     /* max-width: 200px; */
   }

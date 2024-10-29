@@ -24,8 +24,14 @@
     },
     "portfolio": {
         "card-title": "Documentation/Code",
-        "explanation": {
-             "src": "/data/markdown/en/Card.md"
+        "card-intro": {
+             "src": "/data/markdown/en/Card/card-intro.md"
+        },
+        "card-info": {
+             "src": "/data/markdown/en/Card/card-info.md"
+        },
+        "card-outro": {
+             "src": "/data/markdown/en/Card/card-outro.md"
         }
     },
     "footer": {

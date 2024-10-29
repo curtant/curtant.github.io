@@ -1,88 +1,87 @@
-@import 'variables.css';
+@import "variables.css";
 
 /* night-theme.css */
 body.night-mode {
+  background-color: var(--color-bg-night);
 
-    background-color: var(--color-bg-night);
+  .gallery-category,
+  .gallery-info {
+    background-color: var(--color-b-2);
+  }
 
-    .gallery-category, .gallery-info {
-        background-color: var(--color-b-2);
-    }
+  .card,
+  .gallery-info {
+    background-color: var(--color-a-1);
+  }
 
-    .card, .gallery-info {
-        background-color: var(--color-a-1);
-    }
+  .stat-badge {
+    background-color: var(--color-b-2);
 
-    .stat-badge {
-        background-color: var(--color-b-2);
-
-        &:hover {
-            background-color: var(--color-b-3);
-        }
-
-    }
-
-    .stat-info {
-        background-color: var(--color-b-4);
-
-        &:hover {
-            background-color: var(--color-a-3);
-        }
-    }
-
-    .text-content {
-        color: var(--color-text-night);
-    }
-
-    .language-option:hover {
-        background-color: var(--color-a-1);
-    }
-
-    .modal-content {
-  background-color: var(--color-b-2);
-}
-
-    input:focus,
-    textarea:focus {
-      border-color: var(--color-a-2);
-}
-    
-    button[type="submit"] {
-      background-color: var(--color-a-2);
-      color: var(--color-text);
-}
-    
-    button[type="submit"]:hover {
+    &:hover {
       background-color: var(--color-b-3);
-}
+    }
+  }
 
+  .card-info {
+    background-color: var(--color-b-4);
 
-    ::-webkit-scrollbar {
-        &-track {
-            background-color: var(--color-a-1);
-        }
+    &:hover {
+      background-color: var(--color-a-3);
+    }
+  }
 
-        &-thumb {
-            background-color: var(--color-b-3);
-        }
+  .text-content {
+    color: var(--color-text-night);
+  }
+
+  .language-option:hover {
+    background-color: var(--color-a-1);
+  }
+
+  .modal-content {
+    background-color: var(--color-b-2);
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: var(--color-a-2);
+  }
+
+  button[type="submit"] {
+    background-color: var(--color-a-2);
+    color: var(--color-text);
+  }
+
+  button[type="submit"]:hover {
+    background-color: var(--color-b-3);
+  }
+
+  ::-webkit-scrollbar {
+    &-track {
+      background-color: var(--color-a-1);
     }
 
-    /* Adattamenti specifici per il tema notturno nel gallery-container */
-    #gallery-container {
-        .gallery-category:nth-child(odd) {
-            background-color: var(--color-a-1);
-
-            .card {
-                background-color: var(--color-b-2);
-            }
-
-            .stat-badge {
-                background-color: var(--color-a-1);
-
-                &:hover {
-                    background-color: var(--color-a-3);
-                }
-            }
-        }
+    &-thumb {
+      background-color: var(--color-b-3);
     }
+  }
+
+  /* Adattamenti specifici per il tema notturno nel gallery-container */
+  #gallery-container {
+    .gallery-category:nth-child(odd) {
+      background-color: var(--color-a-1);
+
+      .card {
+        background-color: var(--color-b-2);
+      }
+
+      .stat-badge {
+        background-color: var(--color-a-1);
+
+        &:hover {
+          background-color: var(--color-a-3);
+        }
+      }
+    }
+  }
 }

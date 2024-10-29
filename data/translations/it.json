@@ -23,12 +23,15 @@
         }
     },
     "portfolio": {
-        "info": {
-            "src": "/data/markdown/it/Portfolio/info.md"
-        },
         "card-title": "Documentazione/Codice",
-        "explanation": {
-             "src": "/data/markdown/it/Card.md"
+        "card-intro": {
+             "src": "/data/markdown/it/Card/card-intro.md"
+        },
+        "card-info": {
+             "src": "/data/markdown/it/Card/card-info.md"
+        },
+        "card-outro": {
+             "src": "/data/markdown/it/Card/card-outro.md"
         }
     },
     "footer": {
