@@ -15,7 +15,7 @@
   h3 {
     margin-top: 0;
   }
-  text-wrap: balance;
+  /* text-wrap: balance; */
   &.summary {
     max-width: 500px;
   }
@@ -39,7 +39,7 @@
   padding: 0.2rem var(--spacing-s);
   border-radius: var(--border-radius-s);
 
-  text-wrap: balance;
+  /* text-wrap: balance; */
   max-width: fit-content;
   max-height: fit-content;
 
