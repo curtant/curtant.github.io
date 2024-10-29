@@ -24,8 +24,14 @@
     },
     "portfolio": {
         "card-title": "文档 / 代码",
-        "explanation": {
-             "src": "/data/markdown/cn/Card.md"
+        "card-intro": {
+             "src": "/data/markdown/cn/Card/card-intro.md"
+        },
+        "card-info": {
+             "src": "/data/markdown/cn/Card/card-info.md"
+        },
+        "card-outro": {
+             "src": "/data/markdown/cn/Card/card-outro.md"
         }
     },
     "footer": {

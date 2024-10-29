@@ -42,7 +42,7 @@
                     alt="Italiano"
                     class="nav-icon"
                   />
-                  Italiano
+                  Italiano (IT)
                 </div>
               </a>
             </li>
@@ -184,123 +184,99 @@
         </div>
       </section>
 
-      <div class="gallery-category step" data-gallery-category="Example">
-        <div>
-          <div
-            class="gallery-info"
-            data-translate-key="portfolio.explanation"
-          ></div>
-        </div>
-        <!-- CARTA PORTFOLIO  -->
-        <div class="card" data-card-category="portfolio">
-          <a
-            class="live-container"
-            href=""
-            target="_blank"
-            rel="noopener"
-            data-card-img="link"
-          >
-            <img
-              src="media/img/cards/live.png"
-              alt="project-img"
-              class="card-image"
-              data-card-img="src"
-            />
-            <img
-              class="overlay-svg"
-              src="media/img/cards/live.svg"
-              alt="project-img"
-            />
-          </a>
-          <a href="https://github.com/curtant/curtant.github.io" target="_blank" rel="noopener" data-card-title="link">
+      <div
+        class="gallery-category gallery-example step"
+        data-gallery-category="Example"
+      >
+        <div
+          class="gallery-info"
+          data-translate-key="portfolio.card-intro"
+        ></div>
+
+        <span class="gallery-summary">
+          <!-- CARTA PORTFOLIO  -->
+          <div id="example-card" class="card" data-card-category="portfolio">
+            <span class="live-container">
+              <img
+                src="media/img/cards/live.png"
+                alt="project-img"
+                class="card-image info-img"
+              />
+              <img
+                class="overlay-svg"
+                src="media/img/cards/live.svg"
+                alt="project-img"
+              />
+            </span>
+
             <h3
-              class="card-title"
-              data-card-title="text"
+              class="card-title info-title"
               data-translate-key="portfolio.card-title"
             >
               Documentazione OR Codice
             </h3>
-          </a>
-          <div class="card-stats">
-            <div class="stat-row">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                target="_blank"
-                class="stat-badge"
-                rel="noopener"
-                data-card-stats="link"
-              >
+
+            <div class="card-stats">
+              <div class="stat-row">
+                <span class="stat-badge info-badge">
+                  <img
+                    src="media/logos/svg/stats/html.svg"
+                    alt="stat-logo"
+                    onerror="this.style.display='none'"
+                  />
+                  <span>HTML</span>
+                </span>
                 <img
-                  src="media/logos/svg/stats/html.svg"
-                  alt="stat-logo"
-                  data-card-stats="src"
-                  onerror="this.style.display='none'"
+                  src="media/logos/svg/stars/starI.svg"
+                  alt="stars"
+                  class="stat-stars star-i info-stars"
                 />
-                <span data-card-stats="1">HTML</span>
-              </a>
-              <img
-                src="media/logos/svg/stars/starI.svg"
-                alt="stars"
-                class="stat-stars star-i"
-                data-card-stars="I"
-              />
-            </div>
-            <div class="stat-row">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                target="_blank"
-                class="stat-badge"
-                rel="noopener"
-                data-card-stats="link"
-              >
+              </div>
+              <div class="stat-row">
+                <span class="stat-badge info-badge">
+                  <img
+                    src="media/logos/svg/stats/css.svg"
+                    alt="stat-logo"
+                    onerror="this.style.display='none'"
+                  />
+                  <span>CSS</span>
+                </span>
                 <img
-                  src="media/logos/svg/stats/css.svg"
-                  alt="stat-logo"
-                  data-card-stats="src"
-                  onerror="this.style.display='none'"
+                  src="media/logos/svg/stars/starI.svg"
+                  alt="stars"
+                  class="stat-stars star-i info-stars"
                 />
-                <span data-card-stats="2">CSS</span>
-              </a>
-              <img
-                src="media/logos/svg/stars/starI.svg"
-                alt="stars"
-                class="stat-stars star-i"
-                data-card-stars="I"
-              />
-            </div>
-            <div class="stat-row">
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                target="_blank"
-                class="stat-badge"
-                rel="noopener"
-                data-card-stats="link"
-              >
+              </div>
+              <div class="stat-row">
+                <span class="stat-badge info-badge">
+                  <img
+                    src="media/logos/svg/stats/js.svg"
+                    alt="stat-logo"
+                    onerror="this.style.display='none'"
+                  />
+                  <span>JavaScript</span>
+                </span>
                 <img
-                  src="media/logos/svg/stats/js.svg"
-                  alt="stat-logo"
-                  data-card-stats="src"
-                  onerror="this.style.display='none'"
+                  src="media/logos/svg/stars/starI.svg"
+                  alt="stars"
+                  class="stat-stars star-i info-stars"
                 />
-                <span data-card-stats="3">JavaScript</span>
-              </a>
-              <img
-                src="media/logos/svg/stars/starI.svg"
-                alt="stars"
-                class="stat-stars star-i"
-                data-card-stars="I"
-              />
-            </div>
-            <div class="stat-row">
-              <span class="card-edition" data-gallery-category="Example"
-                >Edition: Example</span
-              >
-              <span class="card-edition" data-gallery-category="Example"
-                >Date: 12/2012</span
-              >
+              </div>
+              <div class="stat-row">
+                <span class="card-edition info-date">Edition: Example</span>
+                <span class="card-edition info-date">Date: 12/2012</span>
+              </div>
             </div>
           </div>
-        </div>
+          <div
+            class="gallery-info summary"
+            data-translate-key="portfolio.card-info"
+          ></div>
+        </span>
+        <div
+          class="gallery-info"
+          data-translate-key="portfolio.card-outro"
+        ></div>
       </div>
       <!-- -->
       <div id="gallery-container" class="step"></div>
