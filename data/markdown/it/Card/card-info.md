@@ -5,7 +5,7 @@
 
 L'immagine ti darà un'idea veloce di cosa tratta il progetto.
 
-La prima scintilla che accendendo la mia curiosità ne iniziato il viaggio.
+La prima scintilla che accendendo la mia curiosità ne ha fatto iniziare il viaggio.
 
 Cliccando su di essa, verrete reindirizzati al progetto o a una sua demo se disponibile.
 </details>
