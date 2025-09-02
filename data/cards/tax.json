@@ -38,22 +38,22 @@
             "titleText": "TaxApp",
             "stats": [
                 {
-                    "link": "https://react.dev",
-                    "logoSrc": "react.svg",
-                    "text": "React",
-                    "stars": "1e"
-                },
-                {
-                    "link": "https://tailwindcss.com/",
-                    "logoSrc": "tailwind.svg",
-                    "text": "Tailwind",
-                    "stars": "2"
-                },
-                {
-                    "link": "https://en.wikipedia.org/wiki/Digital_product_design",
-                    "logoSrc": "design.svg",
-                    "text": "Product Design",
+                    "link": "https://www.djangoproject.com/",
+                    "logoSrc": "django.svg",
+                    "text": "Django",
                     "stars": "3e"
+                },
+                {
+                    "link": "https://vuejs.org/",
+                    "logoSrc": "vue.svg",
+                    "text": "Vue",
+                    "stars": "3"
+                },
+                {
+                    "link": "https://getbootstrap.com/",
+                    "logoSrc": "bootstrap.svg",
+                    "text": "Bootstrap",
+                    "stars": "2"
                 }
             ],
             "edition": "Cose-Noiose",
