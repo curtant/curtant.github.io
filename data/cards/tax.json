@@ -32,9 +32,9 @@
         },
         {
             "cardCategory": "730",
-            "imgLink": "",
-            "imgSrc": "wip.svg",
-            "titleLink": "",
+            "imgLink": "https://tax-app-pqobw.ondigitalocean.app/",
+            "imgSrc": "tax.png",
+            "titleLink": "https://github.com/curtant/TaxApp",
             "titleText": "TaxApp",
             "stats": [
                 {
@@ -89,4 +89,5 @@
             "date": "Soon"
         }
     ]
+
 }
